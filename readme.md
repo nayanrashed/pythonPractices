@@ -1,0 +1,1 @@
+- Here i upload my python practice files along with my mini beginners projects(which i tried during pandemic). Now i am trying to enrich this repo with python basic contents.  
