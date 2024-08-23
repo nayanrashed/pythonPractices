@@ -4,7 +4,7 @@ print("Hello",end=" ")
 print("World")
 '''
 '''
-keyword arhument- sep
+keyword argument- sep
 print('a','b','c',sep=",")
 '''
 
