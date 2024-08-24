@@ -13,6 +13,7 @@ file_reader =  csv.reader(file)
 # writing a csv file
 output_file = open('out.csv', 'w', newline='')
 output_writer=csv.writer(output_file)
+# output_writer=csv.writer(output_file, delimiter='.')
 output_writer.writerow(['1','2','3','4'])
 output_writer.writerow(['a','b','c','d'])
 output_file.close()
