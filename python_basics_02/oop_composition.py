@@ -1,25 +1,3 @@
-''' 001
-class StoryBook:
-    pass
-
-#Creating an instance/object of the StoryBook
-book_1= StoryBook()
-book_2=StoryBook()
-# print(book_1)
-
-
-#instance variable
-book_1.name='Hamlet'
-book_1.price=450
-book_1.authorName='Shakspear'
-
-book_2.name='the kite runner'
-book_2.price=550
-book_2.authorName='khaled Hosseini'
-
-print(book_1.name)
-print(book_2.name)'''
-
 class StoryBook:
     # CLASS VARIABLE
     no_of_books = 0
@@ -47,25 +25,36 @@ class StoryBook:
     def apply_discount(self):
         self.price=int(self.price-self.price*self.discount)
     
-        
- #Creating an instance/object of the StoryBook       
+
+class Library:
+    def __init__(self, book_list=None):
+        if book_list is None:
+            self.book_list = []
+        else:
+            self.book_list =  book_list
+            
+    def get_all_books(self):
+        for book in self.book_list:
+            print(f'Title: {book.name}, Author: {book.author_name}, Price:{book.price}')   
+    
+    def add_book(self,book):
+        self.book_list.append(book)
+    
+    def remove_book(self,book):
+        self.book_list.remove(book)
+    
+
+     
+#Creating an instance/object of the StoryBook       
 book_1= StoryBook('Hamlet',450,'Shakespears',1564,500)
 book_2=StoryBook('Kite Runner',550, 'Khaled Hosasini',1965,220)
 
-#book_1.name='Romio and Juliet'
-# print(book_1.name)
-# print(book_2.name)
+p_library=Library()
+p_library.add_book(book_1)
+p_library.add_book(book_2)
 
-# book_1.get_book_info()
-# StoryBook.get_book_info(book_1)
-# book_1.get_author_info()
+p_library.get_all_books()
 
-# print(book_1.no_of_books)
-# print(book_2.no_of_books)
-# print(StoryBook.no_of_books)
+p_library.remove_book(book_2)
 
-
-print(book_2.price)
-book_2.discount=0.5
-book_2.apply_discount()
-print(book_2.price)
+p_library.get_all_books()

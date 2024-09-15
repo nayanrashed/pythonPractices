@@ -46,11 +46,23 @@ hBot.move_forward() '''
 
 houseBot = HouseBot('Rob',101,50)
 
-print(houseBot.name)
+
+
+
+'''USES OF help(), issubclass(), isinstance()'''
+#print(help(Robot))
+
+print(issubclass(HouseBot,Robot))
+print(issubclass(Robot,HouseBot))
+print(issubclass(Robot,object))
+
+print(isinstance(houseBot,Robot))
+
+'''print(houseBot.name)
 houseBot.clean()
 houseBot.clean()
 houseBot.clean()
 houseBot.move_forward()
 print(houseBot.area_covered)
 houseBot.set_cover_area(80)
-houseBot.clean()
+houseBot.clean()'''
