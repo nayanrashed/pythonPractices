@@ -1,6 +1,6 @@
 identity = {'Name':'Sabbir', 'Age':'21', 'Job':'Student'}
 
-'''#Printing values
+#Printing values
 for i in identity.values():
     print(i)
     
@@ -10,12 +10,13 @@ for i in identity.keys():
     
 #Printing keys+values
 for i in identity.items():
-    print(i)'''
+    print(i)
 
-'''X=list(identity.keys())
-Y=list(identity.values())
-print(X)
-print(Y)'''
+# X=list(identity.keys())
+# Y=list(identity.values())
+# print(X)
+# print(Y)
+# print(type(identity.keys()))
 
 '''# A HANDY TRICK
 for k,v in identity.items():
@@ -33,6 +34,6 @@ print(str(identity.get('Height', 'Default')))'''
 
 
 # set default
-print(identity.setdefault('Name', 'Cosmos'))
-print(identity.setdefault('Height','6ft'))
-print(identity)
+# print(identity.setdefault('Name', 'Cosmos'))
+# print(identity.setdefault('Height','6ft'))
+# print(identity)

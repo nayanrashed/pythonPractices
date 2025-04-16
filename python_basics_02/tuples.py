@@ -1,9 +1,9 @@
 #tuple example
-'''tup = (1,2,3,4,'ek', 3.1416)
+tup = (1,2,3,4,'ek', 3.1416)
 print(tup)
 print(type(tup))
 print(tup[5])
-print(tup[:4])'''
+print(tup[:4])
 
 #converting tuple to list
 """new_list = list(tup)
