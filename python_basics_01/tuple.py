@@ -1,11 +1,11 @@
-# li=[1,2,3,4,5]
-# tpl=(1,2,3,4,5)
-# print(li)
-# print(tpl)
-# li[0]=6
-# print(li)
+li=[1,2,3,4,5]
+tpl=(1,2,3,4,5)
+print(li)
+print(tpl)
+li[0]=6
+print(li)
 # tpl[0]=6
-# print(tpl)
+print(tpl)
 
 
 # print(dir(tuple))

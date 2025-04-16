@@ -13,7 +13,7 @@ print(word.find('z'))
 
 country = "Bangladesh"
 print(country.startswith("Ban")) 
-print(country.endswith("sh")) 
+print(country.endswith("shk")) 
 
 country1 = "Bangladesh, Japan, Italy"
 print(country1.split(","))
